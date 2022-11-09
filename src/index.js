@@ -6,16 +6,20 @@ import {Provider} from 'react-redux'
 import { CurrencyProvider } from './locales/CurrencyContext';
 
 import './locales/18n'
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}>
-    <Suspense fallback={<div>Loading...</div>}>
-      <CurrencyProvider>
-        <App />
-      </CurrencyProvider>
-    </Suspense>
-  </Provider>
+  <BrowserRouter>
+    <Provider store={store}>
+      <Suspense fallback={<div>Loading...</div>}>
+        <CurrencyProvider>
+          <App />
+        </CurrencyProvider>
+      </Suspense>
+    </Provider>
+  </BrowserRouter>
+  
 );
 
 
