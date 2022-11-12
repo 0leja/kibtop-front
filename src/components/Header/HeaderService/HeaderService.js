@@ -1,7 +1,14 @@
+
+import Logo from "./Logo/Logo";
+import Services from "./Services/Services";
+
 const HeaderService = () => {
     return (
         <div className="header__service">
-            Ghbdt
+            <div className="container">
+                <Logo />
+                <Services />
+            </div>
         </div>
     );
 }

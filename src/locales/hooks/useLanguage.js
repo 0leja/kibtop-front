@@ -1,10 +1,9 @@
 import { useTranslation } from "react-i18next";
 
-export const useLang = () => {
+export const useLanguage = () => {
     const { t, i18n } = useTranslation();
 
-    const changeLanguage = e => {
-        const language = e.currentTarget.value
+    const changeLanguage = language => {
         i18n.changeLanguage(language);
     };
 

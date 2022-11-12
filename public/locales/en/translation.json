@@ -1,4 +1,28 @@
 {
-    "text": "Some text",
-    "hello": "Hello World!"
+    "Сontact support": "Сontact support",
+    "Service rules": "Service rules",
+    "Brief description of the service": "Brief description of the service",
+    "English": "English",
+    "Russian": "Russian",
+    "Turkish": "Turkish",
+    "Search product": "Search product",
+    "Filter": "Filter",
+    "Add advert": "Add advert",
+
+    "All categories": "All categories",
+    "Real estate": "Real estate",
+    "Auto": "Auto",
+    "Job": "Job",
+    "Services": "Services",
+    "For kids": "For kids",
+    "Electronics": "Electronics",
+    "House and garden": "House and garden",
+
+    "Promote your product": "Promote your product",
+    "Increase your ad views": "Increase your ad views",
+    "Promo slider": "Promo slider",
+    "Detailed description of the promotion": "Detailed description of the promotion",
+    "MORE": "MORE",
+
+    "Recommended": "Recommended"
 }

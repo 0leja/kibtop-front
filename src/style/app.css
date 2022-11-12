@@ -4,12 +4,17 @@
     --color-opacity-black: rgba(65, 64, 66, .6);
     --color-grey: rgba(65, 64, 66, 0.4);
     --color-blue: #65A4FE;
+    --color-yellow: #FFC11E;
+    --color-green: #35D073;
 }
 
 
 
 body {
     margin: 0;
+
+    font-family: 'Open Sans';
+    color: var(--color-black);
 }
 
 * {
@@ -24,7 +29,6 @@ a {
 
 button, button:hover, button:active {
     border: none;
-    background-color: var(--color-blue);
     outline: none;
     color: inherit;
 }
@@ -81,6 +85,7 @@ button, button:hover, button:active {
 }
 
 .more-link-text {
+    text-transform: uppercase;
     font-family: 'SFProText';
     font-style: normal;
     font-weight: 400;
@@ -91,7 +96,7 @@ button, button:hover, button:active {
     color: var(--color-opacity-black)
 }
 
-.service-link-text {
+.settings-link-text {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
