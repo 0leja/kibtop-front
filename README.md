@@ -1,4 +1,4 @@
-# `npm i react-router-dom react-redux @reduxjs/toolkit react-i18next i18next i18next-http-backend i18next-browser-languagedetector`
+# `npm i react-router-dom react-redux react-hook-form @reduxjs/toolkit react-i18next i18next i18next-http-backend i18next-browser-languagedetector axios jwt-decode`
 
 # Getting Started with Create React App
 

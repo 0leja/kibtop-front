@@ -28,9 +28,15 @@ a {
 }
 
 button, button:hover, button:active {
+    display: inline-block;
     border: none;
     outline: none;
     color: inherit;
+}
+
+input,  input:hover, input:focus {
+    border: none;
+    outline: none;
 }
 
 .mb-15 {
@@ -39,6 +45,13 @@ button, button:hover, button:active {
 
 .mb-30 {
     margin-bottom: 15px;
+}
+
+.btn {
+    box-sizing: border-box;
+
+    background-color: var(--color-blue);
+    color: #fff !important;
 }
 
 .container {

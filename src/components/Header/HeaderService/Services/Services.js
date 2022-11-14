@@ -1,3 +1,4 @@
+import AuthContainer from "./Auth/AuthContainer";
 import SearchProducts from "./SearchProducts/SearchProducts";
 
 const Services = () => {
@@ -5,6 +6,7 @@ const Services = () => {
         <>
             <div className="services-wrapper">
                 <SearchProducts />
+                <AuthContainer />
             </div>
         </>
     );

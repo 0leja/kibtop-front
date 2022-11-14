@@ -10,7 +10,7 @@ const SupportNav = () => {
                 <div className="support-nav__item">
                     <Svg className="support-nav__icon" symbol="quest" />
 
-                    <Link to='support' className="settings-link-text"><Text content="Сontact support" /></Link>
+                    <Link to='/support' className="settings-link-text"><Text content="Сontact support" /></Link>
                 </div>
 
                 <div className="support-nav__item">
@@ -18,7 +18,7 @@ const SupportNav = () => {
                 </div>
 
                 <div className="support-nav__item">
-                    <Link to='support' className="settings-link-text"><Text content="Service rules" /></Link>
+                    <Link to='/rules' className="settings-link-text"><Text content="Service rules" /></Link>
                 </div>
             </nav>
         </>
