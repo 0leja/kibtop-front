@@ -18,7 +18,7 @@ const SupportNav = () => {
                 </div>
 
                 <div className="support-nav__item">
-                    <Link to='/rules' className="settings-link-text"><Text content="Service rules" /></Link>
+                    <Link to='/rules' className="settings-link-text"><Text content="Website advertising" /></Link>
                 </div>
             </nav>
         </>
