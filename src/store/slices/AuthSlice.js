@@ -5,7 +5,6 @@ import { AuthApi } from "../../services/AuthApi";
 const initialState = {
     isAuthed: false,
     userId: null,
-    userName: null
 }
 
 export const authSlice = createSlice({
@@ -13,11 +12,10 @@ export const authSlice = createSlice({
     initialState,
     reducers: {
         setAuth(state, action) {
-            const {userId, userName} = action.payload;
+            const {userId} = action.payload;
 
 
             state.userId = userId;
-            state.userName = userName;
             state.isAuthed = true;
         }
     }

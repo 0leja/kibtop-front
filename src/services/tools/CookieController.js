@@ -33,4 +33,3 @@ export const Cookies = {
         document.cookie = `${cookieName}=${null}; domain=localhost; expires=${expires}; path='/';`
     }
 }
-

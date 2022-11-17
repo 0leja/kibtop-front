@@ -10,6 +10,7 @@ import carriage from "./img/carriage.png"
 import phone from "./img/phone.png"
 import armchair from "./img/armchair.png"
 import dress from "./img/dress.png"
+import CategoryNavLink from "./CategoryNavLink";
 
 
 const CategoriesNav = () => {
@@ -20,8 +21,8 @@ const CategoriesNav = () => {
         {id: 3,link: '', text: 'Services', backgroundColor: '#CDDDFF', img: paint},
         {id: 4,link: '', text: 'For kids', backgroundColor: '#F7D055', img: carriage},
         {id: 5,link: '', text: 'Electronics', backgroundColor: '#F8D8CB', img: phone},
-        {id: 6,link: '', text: 'House and garden', backgroundColor: '#D2F7F5', img: armchair},
         {id: 7,link: '', text: 'Fashion and style', backgroundColor: '#D1DEFC', img: dress},
+        {id: 6,link: '', text: 'House and garden', backgroundColor: '#D2F7F5', img: armchair},
 
     ]
 
@@ -41,19 +42,7 @@ const CategoriesNav = () => {
                     </div>
                     <ul className="categories-nav__list">
                         {
-                            NavLinks.map(({id, link, text, backgroundColor, img}) => (
-                                <>
-                                    <li className="categories-nav__category" key={id}>
-                                        <Link to={link} className="categories-nav__link">
-                                            <div className="catregory-icon" style={{backgroundColor}}>
-                                                <img src={img} alt={text} />
-                                            </div>
-
-                                            <p className="button-text"><Text content={text} /></p>
-                                        </Link>
-                                    </li>
-                                </>
-                            ))
+                            NavLinks.map(link => <CategoryNavLink {...link} key={link.id} />)
                         }
                     </ul>
                 </div>
