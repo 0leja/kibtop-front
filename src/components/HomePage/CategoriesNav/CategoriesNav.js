@@ -42,15 +42,17 @@ const CategoriesNav = () => {
                     <ul className="categories-nav__list">
                         {
                             NavLinks.map(({id, link, text, backgroundColor, img}) => (
-                                <li className="categories-nav__category" key={id}>
-                                    <Link to={link} className="categories-nav__link">
-                                        <div className="catregory-icon" style={{backgroundColor}}>
-                                            <img src={img} alt={text} />
-                                        </div>
+                                <>
+                                    <li className="categories-nav__category" key={id}>
+                                        <Link to={link} className="categories-nav__link">
+                                            <div className="catregory-icon" style={{backgroundColor}}>
+                                                <img src={img} alt={text} />
+                                            </div>
 
-                                        <p className="button-text"><Text content={text} /></p>
-                                    </Link>
-                                </li>
+                                            <p className="button-text"><Text content={text} /></p>
+                                        </Link>
+                                    </li>
+                                </>
                             ))
                         }
                     </ul>

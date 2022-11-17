@@ -1,10 +1,14 @@
-const Cookies = {
-    getCookies() {
+export const Cookies = {
+    getCookies(cookieName) {
         const cookies = document.cookie.split('; ').map(cookString => cookString.split('='))
         let data = {}
         cookies.forEach((cookie) => {
             data = {...data, ...{[cookie[0]]: cookie[1]} }
         })
+
+        if(!!cookieName) {
+            return data[cookieName]
+        }
 
         return data
     },
@@ -30,4 +34,3 @@ const Cookies = {
     }
 }
 
-export default Cookies
